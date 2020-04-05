@@ -1,2 +1,5 @@
-https://www.bbcgoodfood.com/recipes/piri-piri-chicken-smashed-sweet-potatoes-broccoli
-https://www.bbcgoodfood.com/recipes/saag-paneer
+# comments start with #
+# example format:
+# recipeName, recipeUrl
+Piri_piri_chicken,https://www.bbcgoodfood.com/recipes/piri-piri-chicken-smashed-sweet-potatoes-broccoli
+saag_paneer,https://www.bbcgoodfood.com/recipes/saag-paneer

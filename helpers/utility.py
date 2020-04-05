@@ -1,13 +1,28 @@
 # helper functions
+from bs4 import BeautifulSoup
+import requests
+
+#====================================================================================================
+
+headers = {
+    "User-agent": "Mozilla/5.0 (X11; Linux x86_64) \
+    AppleWebKit/537.36 (KHTML, like Gecko) \
+    Chrome/47.0.2526.80 Safari/537.36"
+}
+
+#====================================================================================================
 
 def get_urls(file):
     """ get recipe urls from file """
-    urls = []
+    urls = {}
     with open(file, "r") as f:
         for line in f:
             if line.startswith("#"):
                 continue
-            urls += [line.strip("\n")]
+            lineString = line.strip("\n").split(",")
+            name = lineString[0]
+            url  = lineString[1]
+            urls[name] = url
     return urls
 
 #====================================================================================================
