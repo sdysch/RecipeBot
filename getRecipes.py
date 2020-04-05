@@ -1,7 +1,7 @@
 # local
 from helpers.utility import get_recipe, get_urls
 
-#====================================================================================================
+#TODO recipes with same name but different url
 
 def main():
     filename = "recipes.txt"
@@ -9,7 +9,7 @@ def main():
     for recipeName in urls:
         url = urls[recipeName]
         serves, nutrition, ingredient, method = get_recipe(url)
-        print(method[0].split("."))
+        writeFile(recipeName, serves, nutrition, ingredient, method)
 
 #====================================================================================================
 

@@ -77,3 +77,43 @@ def get_recipe(source_url):
     return serves, nutrition, ingredient, method
 
 #====================================================================================================
+
+def formatMethod(method):
+    """ Format method nicely.
+        Method is provided as a dictionary of parts,
+        with each part containing a single line string of sentences.
+        Write each sentence per part on a new line,
+        with a new line to separate the parts."""
+
+    result = ""
+    for part in range(len(method)):
+        sentences = method[part].split(".")
+        for sentence in sentences:
+            result += sentence + "\n"
+        result += "\n"
+    return result
+
+#====================================================================================================
+
+def writeFile(recipeName, serves, nutrition, ingredient, method):
+    recipe = method
+    with open("output/{recipeName}.txt".format(recipeName = recipeName), "w") as f:
+        f.write("================= ")
+        f.write(recipeName)
+        f.write(" =================")
+        f.write("\n")
+
+        f.write(serves + "\n")
+
+        #f.write(nutrition + "\n")
+
+        f.write("\n")
+        f.write("Ingredients:" + "\n")
+        for i in ingredient:
+            f.write(i + "\n")
+
+        f.write("\n")
+        f.write("\n")
+        f.write("Method" + "\n")
+        f.write(formatMethod(recipe))
+
