@@ -4,6 +4,7 @@ Provide list of BBC good food recipes in `recipes.txt`, and get the recipe for e
 
 The response data is scraped from [BBC Good Food](https://www.bbcgoodfood.com) website.
 
+Recipe retrieval code from [abhishekmishragithub/RecipeBot](https://github.com/abhishekmishragithub/RecipeBot)
 
 ## Required Libraries
 

@@ -1,5 +1,20 @@
 # comments start with #
+# possible improvements = automatic name detection from string after [...]/recipes/
 # example format:
 # recipeName, recipeUrl
+
 Piri_piri_chicken,https://www.bbcgoodfood.com/recipes/piri-piri-chicken-smashed-sweet-potatoes-broccoli
 saag_paneer,https://www.bbcgoodfood.com/recipes/saag-paneer
+Spicy_root_lentil_casserole,https://www.bbcgoodfood.com/recipes/spicy-root-lentil-casserole
+mexican_penne_with_avocado,https://www.bbcgoodfood.com/recipes/mexican-penne-avocado
+hummus,https://www.bbcgoodfood.com/recipes/hummus
+mushroom_stifado,https://www.bbcgoodfood.com/recipes/mushroom-stifado
+moroccan_chickpea_squash_cavolo_nero_stew,https://www.bbcgoodfood.com/recipes/moroccan-chickpea-squash-kale-stew
+curried_cod,https://www.bbcgoodfood.com/recipes/curried-cod
+french_onion_soup,https://www.bbcgoodfood.com/recipes/ultimate-makeover-french-onion-soup
+chilli_con_carne,https://www.bbcgoodfood.com/recipes/chilli-con-carne-recipe
+baked_eggs_with_potatoes_mushrooms_cheese,https://www.bbcgoodfood.com/recipes/baked-eggs-potatoes-mushrooms-cheese
+chilli_con_carne_jacket_potato,https://www.bbcgoodfood.com/recipes/chilli-con-carne-jackets
+thai_green_chicken_curry,https://www.bbcgoodfood.com/recipes/thai-green-chicken-curry
+veggie_lasagne,https://www.bbcgoodfood.com/recipes/veggie-lasagne
+#spinach_mushroom_lasagne,https://www.simplyrecipes.com/recipes/vegetarian_spinach_and_mushroom_lasagna/

@@ -12,11 +12,20 @@ headers = {
 
 #====================================================================================================
 
+def nonblank_lines(f):
+    """ python generator to get non-empty lines """
+    for l in f:
+        line = l.rstrip()
+        if line:
+            yield line
+
+#====================================================================================================
+
 def get_urls(file):
     """ get recipe urls from file """
     urls = {}
     with open(file, "r") as f:
-        for line in f:
+        for line in nonblank_lines(f):
             if line.startswith("#"):
                 continue
             lineString = line.strip("\n").split(",")
